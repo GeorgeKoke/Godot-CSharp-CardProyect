@@ -1,0 +1,9 @@
+C:\Users\Georg\Documents\01 - Estudios\Proyectos\Godot C#\Card Proyect\.mono\temp\bin\Debug\Card Proyect.dll
+C:\Users\Georg\Documents\01 - Estudios\Proyectos\Godot C#\Card Proyect\.mono\temp\bin\Debug\Card Proyect.pdb
+C:\Users\Georg\Documents\01 - Estudios\Proyectos\Godot C#\Card Proyect\.mono\temp\obj\Debug\Card Proyect.csproj.AssemblyReference.cache
+C:\Users\Georg\Documents\01 - Estudios\Proyectos\Godot C#\Card Proyect\.mono\temp\obj\Debug\Card Proyect.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Georg\Documents\01 - Estudios\Proyectos\Godot C#\Card Proyect\.mono\temp\obj\Debug\Card Proyect.AssemblyInfoInputs.cache
+C:\Users\Georg\Documents\01 - Estudios\Proyectos\Godot C#\Card Proyect\.mono\temp\obj\Debug\Card Proyect.AssemblyInfo.cs
+C:\Users\Georg\Documents\01 - Estudios\Proyectos\Godot C#\Card Proyect\.mono\temp\obj\Debug\Card Proyect.csproj.CoreCompileInputs.cache
+C:\Users\Georg\Documents\01 - Estudios\Proyectos\Godot C#\Card Proyect\.mono\temp\obj\Debug\Card Proyect.dll
+C:\Users\Georg\Documents\01 - Estudios\Proyectos\Godot C#\Card Proyect\.mono\temp\obj\Debug\Card Proyect.pdb
