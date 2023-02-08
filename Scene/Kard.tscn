@@ -10,6 +10,8 @@ extents = Vector2( 280, 392 )
 extents = Vector2( 240, 360 )
 
 [node name="Kard" type="KinematicBody2D"]
+scale = Vector2( 0.35, 0.35 )
+collision_layer = 2
 input_pickable = true
 script = ExtResource( 2 )
 
@@ -20,6 +22,7 @@ texture = ExtResource( 1 )
 shape = SubResource( 1 )
 
 [node name="CardArea" type="Area2D" parent="."]
+z_as_relative = false
 collision_layer = 2
 collision_mask = 0
 

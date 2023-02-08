@@ -10,7 +10,7 @@ public class Kard : KinematicBody2D
     Vector2 dir, zone_pos;
     Vector2 newPosition = Vector2.Zero;
     List<Area2D> list_zone = new List<Area2D>();
-    bool dragging, mouse_in, chosen, on_zone = false;
+    public bool dragging, mouse_in, chosen, on_zone = false;
 
 
     // Called when the node enters the scene tree for the first time.
@@ -72,6 +72,7 @@ public class Kard : KinematicBody2D
 
     public void Chosen(){
         chosen = true;
+        GD.Print(ZIndex);
     }
 
     //Conected Signals
