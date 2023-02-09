@@ -38,12 +38,13 @@ public class Kard : KinematicBody2D
 
     public override void _Input(InputEvent @event){
         if(@event is InputEventMouseButton){
-            if(chosen && @event.IsPressed() && mouse_in){
+            if(chosen && @event.IsActionPressed("mouse_left") && mouse_in){
                 dragginDistance = Position.DistanceTo(GetGlobalMousePosition());
                 dir = (GetGlobalMousePosition() - Position).Normalized();
                 dragging = true;
                 newPosition = newPosition.LinearInterpolate(GetGlobalMousePosition() - dragginDistance * dir, 1);
-                // newPosition = GetGlobalMousePosition() - dragginDistance * dir;
+                // Sin Interpolacion de Movimiento
+                // newPosition = GetGlobalMousePosition() - dragginDistance * dir; 
             }else{
                 dragging = false;
                 chosen = false;
@@ -51,7 +52,9 @@ public class Kard : KinematicBody2D
         }else if(@event is InputEventMouseMotion){
             if(dragging){
                 newPosition = newPosition.LinearInterpolate(GetGlobalMousePosition() - dragginDistance * dir, 1);
-                // newPosition = GetGlobalMousePosition() - dragginDistance * dir;
+                // Sin Interpolacion de Movimiento
+                // newPosition = GetGlobalMousePosition() - dragginDistance * dir; 
+                
             }
         }
     }
@@ -62,7 +65,12 @@ public class Kard : KinematicBody2D
             zone_pos = Vector2.Zero;
         }
     }
+    public void Chosen(){
+        chosen = true;
+        // GD.Print(ZIndex);
+    }
 
+    // Some Card Animation using LinearInterpolate to scale 
     private void DragAnim(float delta){
         Scale = Scale.LinearInterpolate((cardDimension + new Vector2(0.1f,0.1f)), 25* delta);
     }
@@ -70,10 +78,6 @@ public class Kard : KinematicBody2D
         Scale = Scale.LinearInterpolate(cardDimension, 25* delta);
     }
 
-    public void Chosen(){
-        chosen = true;
-        GD.Print(ZIndex);
-    }
 
     //Conected Signals
     public void _on_Kard_mouse_entered(){
@@ -83,7 +87,7 @@ public class Kard : KinematicBody2D
         mouse_in = false;
     }
 
-     public void _on_CardArea_area_entered(Area2D area2D){
+    public void _on_CardArea_area_entered(Area2D area2D){
         if(area2D.GetParent().IsInGroup("zone")){
             on_zone = true;
             list_zone.Add(area2D);
